@@ -40,12 +40,12 @@ class ViewController: UIViewController {
     func addrefreshControl() {
         self.contactTableView.addSubview(self.refreshControl)
     }
-
+    
     private func loadContactDetails(pullToRefresh: Bool = false) {
         if !pullToRefresh {
             startLoadingIndicator()
         }
-             // get Data from service
+        // get Data from service
         let assignmentVModel = AssignmentViewModel(conatactInfo: nil, conatctDelegate: self)
         assignmentVModel.fetchContactDetails()
     }
@@ -74,10 +74,10 @@ class ViewController: UIViewController {
 extension ViewController: contactInformation {
     func updateContactDetails(contactDetails: [ContactInfo]?, error: Error?) {
         if error == nil {
-        self.conatctInformation = contactDetails
-        DispatchQueue.main.async{
-            self.updateTableView()
-        }
+            self.conatctInformation = contactDetails
+            DispatchQueue.main.async{
+                self.updateTableView()
+            }
         } else if let erorrDiscription = error {
             DispatchQueue.main.async {
                 self.updateTableView()

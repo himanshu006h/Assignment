@@ -10,23 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582891465.657858"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "loadResult(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582891465.6579731"
+            timestampString = "582905646.843887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -42,7 +26,7 @@
                   moduleName = "Assignment"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582890017.071478"
+                  timestampString = "582905647.104606"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -57,7 +41,7 @@
                   moduleName = "Assignment"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582890017.074239"
+                  timestampString = "582905647.1082391"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -74,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Assignment/Custom TableCell/ContactTableCell.swift"
-            timestampString = "582891465.658072"
+            timestampString = "582905646.844014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "configureCell(contactInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/ViewControllers/ContactDetailViewController.swift"
+            timestampString = "582905646.844184"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "setUpUI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

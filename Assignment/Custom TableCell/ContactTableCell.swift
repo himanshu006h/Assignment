@@ -17,6 +17,7 @@ class ContactTableCell: UITableViewCell {
     
     struct Constants {
     static let favoriteImage = "home_favourite"
+    static let favoriteImageUnselected = "favourite_button"
     }
     
     override func awakeFromNib() {
@@ -34,15 +35,20 @@ class ContactTableCell: UITableViewCell {
    
     guard let details = contactInfo,
         let profileImage = details.profile_pic,
-        let isFavorite = details.favorite else {
+        let isFavorite = details.favorite,
+        let firstName = details.first_name,
+        let lastName = details.last_name else {
         return
     }
     
-    if isFavorite {
+    if isFavorite == true {
         self.imageViewFav.image = UIImage.init(named: Constants.favoriteImage)
+    } else {
+        self.imageViewFav.image = UIImage.init(named: Constants.favoriteImageUnselected)
     }
     
-    self.contactName.text = details.first_name
+    
+    self.contactName.text = firstName + " " + lastName
     self.imageViewIcon.loadImage(urlString: profileImage)
     }
     
