@@ -48,7 +48,7 @@ class AsyncImageView: UIImageView {
             if let _ = error {
                 DispatchQueue.main.async {
                     // if the request could not load then show a broken url image
-                    self.image = #imageLiteral(resourceName: "placeholder")
+                    self.image = UIImage.init(named: "placeholder_photo")
                 }
                 return
             } else if let data = data,

@@ -9,56 +9,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Assignment/ViewModel/AssignmentViewModel.swift"
-            timestampString = "582862246.57295"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "fetchContactDetails()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Assignment.Result&lt;Swift.Array&lt;Assignment.ContactInfo&gt;, Assignment.APIErrors&gt;) -&gt; () in Assignment.AssignmentViewModel.fetchContactDetails() -&gt; ()"
-                  moduleName = "Assignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/ViewModel/AssignmentViewModel.swift"
-                  timestampString = "582862246.748618"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "552">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Assignment.Result&lt;Swift.Array&lt;Assignment.ContactInfo&gt;, Assignment.APIErrors&gt;) -&gt; () in Assignment.AssignmentViewModel.fetchContactDetails() -&gt; ()"
-                  moduleName = "Assignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/ViewModel/AssignmentViewModel.swift"
-                  timestampString = "582862246.7520241"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582862246.573054"
+            timestampString = "582891465.657858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -74,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582862246.57379"
+            timestampString = "582891465.6579731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "parseData(_:completion:)"
             landmarkType = "7">
             <Locations>
@@ -90,12 +42,12 @@
                   moduleName = "Assignment"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582862246.76844"
+                  timestampString = "582890017.071478"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1356">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "335">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -105,12 +57,12 @@
                   moduleName = "Assignment"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582862246.772339"
+                  timestampString = "582890017.074239"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1670">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "346">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -121,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Assignment/ViewControllers/ViewController.swift"
-            timestampString = "582862290.5472749"
+            filePath = "Assignment/Custom TableCell/ContactTableCell.swift"
+            timestampString = "582891465.658072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "updateContactDetails(contactDetails:error:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "configureCell(contactInfo:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

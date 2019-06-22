@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C480A77A22BDCE6D00E575E2 /* ViewController+TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A77922BDCE6D00E575E2 /* ViewController+TableDataSource.swift */; };
+		C480A78122BDD37E00E575E2 /* ContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A77F22BDD37E00E575E2 /* ContactTableCell.swift */; };
+		C480A78222BDD37E00E575E2 /* ContactTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C480A78022BDD37E00E575E2 /* ContactTableCell.xib */; };
 		C4ADCBD322BCCF3B00CDEC94 /* AssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */; };
 		C4C4A4D922BA123800303508 /* Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A4D722BA123800303508 /* Assignment.xcdatamodeld */; };
 		C4C4A4DB22BA123900303508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C4A4DA22BA123900303508 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C480A77922BDCE6D00E575E2 /* ViewController+TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableDataSource.swift"; sourceTree = "<group>"; };
+		C480A77F22BDD37E00E575E2 /* ContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableCell.swift; sourceTree = "<group>"; };
+		C480A78022BDD37E00E575E2 /* ContactTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableCell.xib; sourceTree = "<group>"; };
 		C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewModel.swift; sourceTree = "<group>"; };
 		C4C4A4CD22BA123800303508 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C4A4D822BA123800303508 /* Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment.xcdatamodel; sourceTree = "<group>"; };
@@ -90,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C480A77E22BDD34600E575E2 /* Custom TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				C480A77F22BDD37E00E575E2 /* ContactTableCell.swift */,
+				C480A78022BDD37E00E575E2 /* ContactTableCell.xib */,
+			);
+			path = "Custom TableCell";
+			sourceTree = "<group>";
+		};
 		C4ADCBD122BCCEF800CDEC94 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 				C4ADCBD122BCCEF800CDEC94 /* ViewModel */,
 				C4C4A51022BA132C00303508 /* AppDelegate */,
 				C4C4A50422BA132C00303508 /* CustomImageView */,
+				C480A77E22BDD34600E575E2 /* Custom TableCell */,
 				C4C4A50122BA132C00303508 /* Extension */,
 				C4C4A50622BA132C00303508 /* Models */,
 				C4C4A50E22BA132C00303508 /* Services */,
@@ -193,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C4C4A50D22BA132C00303508 /* ViewController.swift */,
+				C480A77922BDCE6D00E575E2 /* ViewController+TableDataSource.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C4A51622BA132C00303508 /* Main.storyboard in Resources */,
+				C480A78222BDD37E00E575E2 /* ContactTableCell.xib in Resources */,
 				C4C4A51522BA132C00303508 /* LaunchScreen.storyboard in Resources */,
 				C4C4A4DB22BA123900303508 /* Assets.xcassets in Resources */,
 			);
@@ -349,6 +367,8 @@
 				C4C4A51222BA132C00303508 /* String+URLRequest.swift in Sources */,
 				C4C4A51F22BA13B900303508 /* Info.swift in Sources */,
 				C4C4A4D922BA123800303508 /* Assignment.xcdatamodeld in Sources */,
+				C480A78122BDD37E00E575E2 /* ContactTableCell.swift in Sources */,
+				C480A77A22BDCE6D00E575E2 /* ViewController+TableDataSource.swift in Sources */,
 				C4ADCBD322BCCF3B00CDEC94 /* AssignmentViewModel.swift in Sources */,
 				C4C4A51322BA132C00303508 /* String+DynamicHeight.swift in Sources */,
 				C4C4A51922BA132C00303508 /* AppDelegate.swift in Sources */,

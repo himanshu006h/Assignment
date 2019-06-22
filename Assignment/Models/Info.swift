@@ -20,7 +20,7 @@ struct ContactInfo: Decodable {
          id = try container.decodeIfPresent(Int.self, forKey: .id) ?? 0
          first_name = try container.decodeIfPresent(String.self, forKey: .first_name) ?? ""
          last_name = try container.decodeIfPresent(String.self, forKey: .last_name) ?? ""
-         profile_pic = try container.decodeIfPresent(String.self, forKey: .last_name) ?? ""
+         profile_pic = try container.decodeIfPresent(String.self, forKey: .profile_pic) ?? ""
          favorite = try container.decodeIfPresent(Bool.self, forKey: .favorite) ?? false
          url =  try container.decodeIfPresent(String.self, forKey: .url) ?? ""
     }
