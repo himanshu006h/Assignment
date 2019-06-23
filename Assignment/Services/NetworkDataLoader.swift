@@ -28,7 +28,7 @@ class NetworkDataLoader {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
     }()
-
+    
     func loadResult(urlString: String = NetworkDataLoaderConstant.baseUrlString, serviceType: ServiceType = ServiceType.contacts
         , completion: @escaping QueryCompletionHandler) {
         
@@ -44,10 +44,10 @@ class NetworkDataLoader {
                 response.statusCode == 200 {
                 self.parseData((String(data:data,
                                        encoding:.isoLatin1)!.data(using: .utf8)!), serviceType: serviceType, completion: { result in
-                    switch result {
-                    case let .success(feedInfo): completion(.success(feedInfo))
-                    case let .failure(error) : completion(.failure(error))
-                    }
+                                        switch result {
+                                        case let .success(feedInfo): completion(.success(feedInfo))
+                                        case let .failure(error) : completion(.failure(error))
+                                        }
                 })
             }else{
                 if (response as? HTTPURLResponse) != nil{
@@ -57,7 +57,8 @@ class NetworkDataLoader {
         }
         dataTask?.resume()
     }
-
+    
+    //Parse Data as per service type
     private func parseData(_ data: Data, serviceType: ServiceType = ServiceType.contacts, completion: QueryCompletionHandler) {
         switch serviceType {
         case .contacts:

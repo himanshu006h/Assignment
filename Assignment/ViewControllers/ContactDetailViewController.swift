@@ -41,7 +41,7 @@ class ContactDetailViewController: UIViewController {
             let picURL = details.profile_pic,
             let firstName = details.first_name,
             let lastName = details.first_name else {
-            return
+                return
         }
         
         
@@ -57,6 +57,7 @@ class ContactDetailViewController: UIViewController {
         editButton.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
         let barButtonItem = UIBarButtonItem(customView: editButton)
         self.navigationItem.rightBarButtonItem = barButtonItem
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1)
     }
     
     static func getViewController() -> ContactDetailViewController? {
@@ -98,7 +99,7 @@ class ContactDetailViewController: UIViewController {
         // get Data from service
         let detailsVModel = ContactDetailsViewModel(conatactInfo: nil, conatctDelegate: self)
         guard let urlString = self.contactInfo?.url else {
-                return
+            return
         }
         
         detailsVModel.fetchContactDetails(urlString: urlString)
