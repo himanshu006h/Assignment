@@ -17,10 +17,12 @@
 		C480A78C22BF3D4900E575E2 /* Contactdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A78B22BF3D4900E575E2 /* Contactdetails.swift */; };
 		C480A78E22BF427000E575E2 /* ContactDetailViewController+TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A78D22BF427000E575E2 /* ContactDetailViewController+TableDataSource.swift */; };
 		C480A79022BF470400E575E2 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A78F22BF470400E575E2 /* ContactDetailsViewModel.swift */; };
+		C480A79522BFA51200E575E2 /* ContactListJsonParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A79422BFA51200E575E2 /* ContactListJsonParsingTest.swift */; };
+		C480A79622BFA78F00E575E2 /* ContactList.json in Resources */ = {isa = PBXBuildFile; fileRef = C480A79222BFA4AE00E575E2 /* ContactList.json */; };
+		C480A79822BFA92000E575E2 /* AssignmentAsyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A79722BFA92000E575E2 /* AssignmentAsyncTest.swift */; };
 		C4ADCBD322BCCF3B00CDEC94 /* AssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */; };
 		C4C4A4D922BA123800303508 /* Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A4D722BA123800303508 /* Assignment.xcdatamodeld */; };
 		C4C4A4DB22BA123900303508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C4A4DA22BA123900303508 /* Assets.xcassets */; };
-		C4C4A4E922BA123900303508 /* AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A4E822BA123900303508 /* AssignmentTests.swift */; };
 		C4C4A4F422BA123900303508 /* AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A4F322BA123900303508 /* AssignmentUITests.swift */; };
 		C4C4A51222BA132C00303508 /* String+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A50222BA132C00303508 /* String+URLRequest.swift */; };
 		C4C4A51422BA132C00303508 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A50522BA132C00303508 /* AsyncImageView.swift */; };
@@ -61,13 +63,15 @@
 		C480A78B22BF3D4900E575E2 /* Contactdetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactdetails.swift; sourceTree = "<group>"; };
 		C480A78D22BF427000E575E2 /* ContactDetailViewController+TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailViewController+TableDataSource.swift"; sourceTree = "<group>"; };
 		C480A78F22BF470400E575E2 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		C480A79222BFA4AE00E575E2 /* ContactList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ContactList.json; sourceTree = "<group>"; };
+		C480A79422BFA51200E575E2 /* ContactListJsonParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListJsonParsingTest.swift; sourceTree = "<group>"; };
+		C480A79722BFA92000E575E2 /* AssignmentAsyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAsyncTest.swift; sourceTree = "<group>"; };
 		C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewModel.swift; sourceTree = "<group>"; };
 		C4C4A4CD22BA123800303508 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C4A4D822BA123800303508 /* Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment.xcdatamodel; sourceTree = "<group>"; };
 		C4C4A4DA22BA123900303508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C4A4DF22BA123900303508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C4A4E422BA123900303508 /* AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4C4A4E822BA123900303508 /* AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTests.swift; sourceTree = "<group>"; };
 		C4C4A4EA22BA123900303508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C4A4EF22BA123900303508 /* AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C4A4F322BA123900303508 /* AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITests.swift; sourceTree = "<group>"; };
@@ -119,6 +123,14 @@
 			path = "Custom TableCell";
 			sourceTree = "<group>";
 		};
+		C480A79122BFA47A00E575E2 /* Dummy Data */ = {
+			isa = PBXGroup;
+			children = (
+				C480A79222BFA4AE00E575E2 /* ContactList.json */,
+			);
+			path = "Dummy Data";
+			sourceTree = "<group>";
+		};
 		C4ADCBD122BCCEF800CDEC94 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,11 +163,11 @@
 		C4C4A4CF22BA123800303508 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				C4ADCBD122BCCEF800CDEC94 /* ViewModel */,
 				C4C4A51022BA132C00303508 /* AppDelegate */,
 				C4C4A50422BA132C00303508 /* CustomImageView */,
 				C480A77E22BDD34600E575E2 /* Custom TableCell */,
 				C4C4A50122BA132C00303508 /* Extension */,
+				C4ADCBD122BCCEF800CDEC94 /* ViewModel */,
 				C4C4A50622BA132C00303508 /* Models */,
 				C4C4A50E22BA132C00303508 /* Services */,
 				C4C4A50722BA132C00303508 /* StoryBoards */,
@@ -170,8 +182,10 @@
 		C4C4A4E722BA123900303508 /* AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				C4C4A4E822BA123900303508 /* AssignmentTests.swift */,
+				C480A79122BFA47A00E575E2 /* Dummy Data */,
 				C4C4A4EA22BA123900303508 /* Info.plist */,
+				C480A79422BFA51200E575E2 /* ContactListJsonParsingTest.swift */,
+				C480A79722BFA92000E575E2 /* AssignmentAsyncTest.swift */,
 			);
 			path = AssignmentTests;
 			sourceTree = "<group>";
@@ -364,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C480A79622BFA78F00E575E2 /* ContactList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C4A4E922BA123900303508 /* AssignmentTests.swift in Sources */,
+				C480A79522BFA51200E575E2 /* ContactListJsonParsingTest.swift in Sources */,
+				C480A79822BFA92000E575E2 /* AssignmentAsyncTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

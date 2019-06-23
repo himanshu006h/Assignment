@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582972712.824905"
+            filePath = "AssignmentTests/AssignmentAsyncTest.swift"
+            timestampString = "582991114.815641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "parseData(_:serviceType:completion:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testValidCallToInfoAPIGetsStatusCode200()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentUITests/AssignmentUITests.swift"
+            timestampString = "582991114.815794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testApplicationTitle()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

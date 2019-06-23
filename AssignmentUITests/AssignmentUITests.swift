@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Assignment
 
 class AssignmentUITests: XCTestCase {
 
@@ -21,14 +22,28 @@ class AssignmentUITests: XCTestCase {
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
+    
+    func testConatctListAndAddButtonSelection() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Contact"].buttons["Add"].tap()
+    }
+    
+    func testApplicationTitle() {
+        let desireTitleName = "Contact"
+        let app = XCUIApplication()
+        let pageTitle =
+            app.navigationBars.element.identifier
+        XCTAssertEqual(pageTitle, desireTitleName)
+    }
+    
+    func testGroupButtonAction() {
+        let app = XCUIApplication()
+        app.navigationBars["Contact"].buttons["Groups"].tap()
+    }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+    
 }

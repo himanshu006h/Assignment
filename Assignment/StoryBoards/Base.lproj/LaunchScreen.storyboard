@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignmnet By Himanshu Saraswat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAZ-wp-QVh">
+                                <rect key="frame" x="0.0" y="439" width="414" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YAZ-wp-QVh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6n2-KE-ybT"/>
+                            <constraint firstItem="YAZ-wp-QVh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8Sx-RI-M3r"/>
+                            <constraint firstAttribute="trailing" secondItem="YAZ-wp-QVh" secondAttribute="trailing" id="uzS-sS-Xk2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
