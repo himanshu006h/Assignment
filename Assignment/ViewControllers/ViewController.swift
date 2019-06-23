@@ -69,12 +69,28 @@ class ViewController: UIViewController {
         self.activityIndicator.stopAnimating()
         self.contactTableView.reloadData()
     }
+    //Dummy functionality of Add Button
+    @IBAction func addButtonTapped(_ sender: Any) {
+        guard let detailsViewController = ContactDetailViewController.getViewController(),
+            let details = self.conatctInformation else {
+                return
+        }
+        
+        // Set dependency
+        detailsViewController.contactInfo = details.first
+        self.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
 }
 
-extension ViewController: contactInformation {
-    func updateContactDetails(contactDetails: [ContactInfo]?, error: Error?) {
+extension ViewController: ContactInformation {
+    func updateContactDetails(contactDetails: Any?, error: Error?) {
+        
         if error == nil {
-            self.conatctInformation = contactDetails
+            guard let contacts = contactDetails as? [ContactInfo] else {
+                return
+            }
+            
+            self.conatctInformation = contacts
             DispatchQueue.main.async{
                 self.updateTableView()
             }

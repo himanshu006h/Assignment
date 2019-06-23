@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol contactInformation {
-    func updateContactDetails(contactDetails: [ContactInfo]?, error: Error?)
+protocol ContactInformation {
+    func updateContactDetails(contactDetails: Any?, error: Error?)
 }
 
 struct AssignmentViewModel {
     //MARK:- Properties
     var conatactInfo : [ContactInfo]?
-    let conatctDelegate: contactInformation?
+    let conatctDelegate: ContactInformation?
     
      func fetchContactDetails() {
         

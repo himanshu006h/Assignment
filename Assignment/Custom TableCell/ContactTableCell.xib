@@ -68,6 +68,7 @@
                     <constraint firstItem="hQV-e4-mXa" firstAttribute="leading" secondItem="PEu-Eo-yog" secondAttribute="trailing" constant="16" id="zWK-CR-yQM"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="contactName" destination="hQV-e4-mXa" id="jgI-A2-kgh"/>

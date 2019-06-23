@@ -10,7 +10,12 @@
 import Foundation
 
 typealias QueryCompletionHandler = (_ result : FetchResult) -> Void
-typealias FetchResult = Result<[ContactInfo], APIErrors>
+typealias FetchResult = Result<Any, APIErrors>
+
+enum ServiceType: Int {
+    case contacts = 0
+    case contactsDetails = 1
+}
 
 struct NetworkDataLoaderConstant {
     static let baseUrlString = "http://gojek-contacts-app.herokuapp.com/contacts.json"
@@ -24,9 +29,10 @@ class NetworkDataLoader {
         return URLSession(configuration: config)
     }()
 
-    func loadResult(completion: @escaping QueryCompletionHandler) {
+    func loadResult(urlString: String = NetworkDataLoaderConstant.baseUrlString, serviceType: ServiceType = ServiceType.contacts
+        , completion: @escaping QueryCompletionHandler) {
         
-        let request = NetworkDataLoaderConstant.baseUrlString.urlRequest()
+        let request = urlString.urlRequest()
         
         dataTask = session.dataTask(with: request) { data, response, error in
             defer { self.dataTask = nil }
@@ -36,13 +42,13 @@ class NetworkDataLoader {
             } else if let data = data,
                 let response = response as? HTTPURLResponse,
                 response.statusCode == 200 {
-                self.parseData(String(data:data,
-                                      encoding:.isoLatin1)!.data(using: .utf8)!){ result in
+                self.parseData((String(data:data,
+                                       encoding:.isoLatin1)!.data(using: .utf8)!), serviceType: serviceType, completion: { result in
                     switch result {
                     case let .success(feedInfo): completion(.success(feedInfo))
                     case let .failure(error) : completion(.failure(error))
                     }
-                }
+                })
             }else{
                 if (response as? HTTPURLResponse) != nil{
                     completion(.failure(.responseUnsuccessful))
@@ -52,13 +58,24 @@ class NetworkDataLoader {
         dataTask?.resume()
     }
 
-    private func parseData(_ data: Data, completion: QueryCompletionHandler) {
-        do {            
-            let feedInfo = try decoder.decode([ContactInfo].self, from: data)
-            completion(.success(feedInfo))
-        } catch _ as NSError {
-            completion(.failure(.jsonParsingFailure))
-            return
+    private func parseData(_ data: Data, serviceType: ServiceType = ServiceType.contacts, completion: QueryCompletionHandler) {
+        switch serviceType {
+        case .contacts:
+            do {
+                let feedInfo = try decoder.decode([ContactInfo].self, from: data)
+                completion(.success(feedInfo))
+            } catch _ as NSError {
+                completion(.failure(.jsonParsingFailure))
+                return
+            }
+        case .contactsDetails:
+            do {
+                let feedInfo = try decoder.decode(Contactdetails.self, from: data)
+                completion(.success(feedInfo))
+            } catch _ as NSError {
+                completion(.failure(.jsonParsingFailure))
+                return
+            }
         }
     }
 }

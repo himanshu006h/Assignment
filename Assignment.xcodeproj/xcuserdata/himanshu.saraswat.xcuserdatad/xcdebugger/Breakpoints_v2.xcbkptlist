@@ -10,76 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Assignment/Services/NetworkDataLoader.swift"
-            timestampString = "582905646.843887"
+            timestampString = "582970649.444823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "parseData(_:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Assignment.NetworkDataLoader.(parseData in _98658A212EDA66A9F9950BAA0EF56F03)(_: Foundation.Data, completion: (Assignment.Result&lt;Swift.Array&lt;Assignment.ContactInfo&gt;, Assignment.APIErrors&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Assignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582905647.104606"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "335">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Assignment.NetworkDataLoader.(parseData in _98658A212EDA66A9F9950BAA0EF56F03)(_: Foundation.Data, completion: (Assignment.Result&lt;Swift.Array&lt;Assignment.ContactInfo&gt;, Assignment.APIErrors&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Assignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu.saraswat/Desktop/Assignment/Assignment/Services/NetworkDataLoader.swift"
-                  timestampString = "582905647.1082391"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "346">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Assignment/Custom TableCell/ContactTableCell.swift"
-            timestampString = "582905646.844014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "configureCell(contactInfo:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Assignment/ViewControllers/ContactDetailViewController.swift"
-            timestampString = "582905646.844184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "setUpUI()"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "parseData(_:serviceType:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
