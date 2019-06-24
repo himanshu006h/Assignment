@@ -27,7 +27,7 @@ class AssignmentAsyncTest: XCTestCase {
         sessionUnderTest = nil
     }
     
-    func testValidCallToInfoAPIGetsStatusCode200(){
+    func testValidCallToInfoAPIGetsStatusCode200() {
         let request = NetworkDataLoaderConstant.baseUrlString.urlRequest()
         let promise = expectation(description: Constants.StatusCodeDict)
         
