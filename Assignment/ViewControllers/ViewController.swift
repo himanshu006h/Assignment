@@ -12,13 +12,18 @@ class ViewController: UIViewController {
     
     struct Constants {
         static let cellIdentifier = "ContactTableCell"
+        static let indexingIdentifier = "IndexingTableViewCell"
         static let cancel = "Cancel"
         static let blank = ""
     }
     //MARK:- Properties
     @IBOutlet weak var contactTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var indexingTable: UITableView!
     var conatctInformation: [ContactInfo]?
+    let letters = ["A", "B", "C", "D", "E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X", "Y", "Z"]
+    var selectedSearchKey = "A"
     //refresh Table logic
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -52,6 +57,7 @@ class ViewController: UIViewController {
     
     func registerContactCell() {
         self.contactTableView.register(UINib(nibName: Constants.cellIdentifier, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        self.indexingTable.register(UINib(nibName: Constants.indexingIdentifier, bundle: nil), forCellReuseIdentifier: Constants.indexingIdentifier)
     }
     
     func startLoadingIndicator() {
@@ -71,14 +77,14 @@ class ViewController: UIViewController {
     }
     //Dummy functionality of Add Button
     @IBAction func addButtonTapped(_ sender: Any) {
-        guard let detailsViewController = ContactDetailViewController.getViewController(),
-            let details = self.conatctInformation else {
+        guard let newDetailViewController = ContactDetailEditViewController.getViewController() else {
                 return
         }
         
         // Set dependency
-        detailsViewController.contactInfo = details.first
-        self.navigationController?.pushViewController(detailsViewController, animated: true)
+        newDetailViewController.isNewUser = true
+        newDetailViewController.conatctInformation = Contactdetails(first_Name: "", last_name: "", phone_number: "", email: "", profile_pic: "", favorite: false, created_at: "", updated_at: "")
+        self.present(newDetailViewController, animated: true, completion: nil)
     }
 }
 
@@ -100,6 +106,21 @@ extension ViewController: ContactInformation {
                 let alertViewController = UIAlertController(title: Constants.blank, message: erorrDiscription.localizedDescription, preferredStyle: .alert)
                 alertViewController.addAction(UIAlertAction(title: Constants.cancel, style: UIAlertAction.Style.cancel, handler: nil))
                 self.present(alertViewController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func scrollToIndexPath() {
+        guard let contacts = self.conatctInformation else {
+            return
+        }
+        
+        var rowCounter = 0
+        for contact in contacts {
+            if contact.first_name!.prefix(1) == self.selectedSearchKey {
+                self.contactTableView.scrollToRow(at: IndexPath(row: rowCounter, section: 0), at: .top, animated: true)
+            } else {
+                rowCounter += 1
             }
         }
     }

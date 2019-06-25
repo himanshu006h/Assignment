@@ -40,7 +40,7 @@ class ContactDetailViewController: UIViewController {
         guard let details = self.contactInfo,
             let picURL = details.profile_pic,
             let firstName = details.first_name,
-            let lastName = details.first_name else {
+            let lastName = details.last_name else {
                 return
         }
         
@@ -53,11 +53,36 @@ class ContactDetailViewController: UIViewController {
         let editButton = UIButton(type: UIButton.ButtonType.custom)
         editButton.setTitleColor(UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1), for: .normal)
         editButton.setTitle("Edit", for: .normal)
+        editButton.addTarget(self, action: #selector(didTapEditButton), for: .touchUpInside)
         editButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
         editButton.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
         let barButtonItem = UIBarButtonItem(customView: editButton)
         self.navigationItem.rightBarButtonItem = barButtonItem
         self.navigationController?.navigationBar.tintColor = UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1)
+    }
+    
+    //MARK:- Edit button Tapped
+    @objc func didTapEditButton() {
+        guard let editViewController = ContactDetailEditViewController.getViewController(),
+            let details = self.conatctInformation else {
+                return
+        }
+        
+        // Set dependency
+        editViewController.conatctInformation = details
+        editViewController.onEditDismiss = { details in
+            guard let firstName = details.first_name,
+                  let lastName = details.last_name else {
+                    return
+            }
+            
+            self.conatctInformation = details
+            self.startLoadingIndicator()
+            self.userName.text = firstName + " " + lastName
+            self.updateTableView()
+        }
+        
+        self.present(editViewController, animated: true, completion: nil)
     }
     
     static func getViewController() -> ContactDetailViewController? {

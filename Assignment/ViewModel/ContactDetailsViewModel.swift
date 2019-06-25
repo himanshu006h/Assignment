@@ -20,7 +20,7 @@ struct ContactDetailsViewModel {
     func fetchContactDetails(urlString: String) {
         // Fetch data from the API
         //ServiceType
-        NetworkDataLoader().loadResult(urlString: urlString,serviceType: ServiceType.contactsDetails,completion: { result in
+        NetworkDataLoader().loadResult(urlString: urlString, serviceType: ServiceType.contactsDetails, completion: { result in
             switch result {
             case let .success(contactValues):
                 self.conatctDelegate?.updateContactInformation(contactDetails: contactValues, error: nil)
@@ -30,7 +30,6 @@ struct ContactDetailsViewModel {
                 // We had handle the error more precisely rather then just printing to console.
             // The specific type of error can generate specific error for the user
             case let .failure(error) :
-                print("")
                 self.conatctDelegate?.updateContactInformation(contactDetails: nil, error: error)
             }
         })

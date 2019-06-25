@@ -20,6 +20,11 @@
 		C480A79522BFA51200E575E2 /* ContactListJsonParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A79422BFA51200E575E2 /* ContactListJsonParsingTest.swift */; };
 		C480A79622BFA78F00E575E2 /* ContactList.json in Resources */ = {isa = PBXBuildFile; fileRef = C480A79222BFA4AE00E575E2 /* ContactList.json */; };
 		C480A79822BFA92000E575E2 /* AssignmentAsyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A79722BFA92000E575E2 /* AssignmentAsyncTest.swift */; };
+		C4A4745822C125F400435C5F /* ContactDetailEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4745722C125F400435C5F /* ContactDetailEditViewController.swift */; };
+		C4A4745A22C12DBA00435C5F /* ContactDetailEditViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4745922C12DBA00435C5F /* ContactDetailEditViewController+DataSource.swift */; };
+		C4A4745D22C1306C00435C5F /* ContactEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4745B22C1306C00435C5F /* ContactEditTableViewCell.swift */; };
+		C4A4745E22C1306C00435C5F /* ContactEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A4745C22C1306C00435C5F /* ContactEditTableViewCell.xib */; };
+		C4A4746022C141FE00435C5F /* ContactDetailEditViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4745F22C141FE00435C5F /* ContactDetailEditViewController+TextField.swift */; };
 		C4ADCBD322BCCF3B00CDEC94 /* AssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */; };
 		C4C4A4D922BA123800303508 /* Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A4D722BA123800303508 /* Assignment.xcdatamodeld */; };
 		C4C4A4DB22BA123900303508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C4A4DA22BA123900303508 /* Assets.xcassets */; };
@@ -33,6 +38,9 @@
 		C4C4A51922BA132C00303508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A51122BA132C00303508 /* AppDelegate.swift */; };
 		C4C4A51D22BA13B900303508 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A51A22BA13B900303508 /* APIErrors.swift */; };
 		C4C4A51F22BA13B900303508 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A51C22BA13B900303508 /* Info.swift */; };
+		C4E1E06322C1FED000357A28 /* IndexingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1E06122C1FED000357A28 /* IndexingTableViewCell.swift */; };
+		C4E1E06422C1FED000357A28 /* IndexingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E1E06222C1FED000357A28 /* IndexingTableViewCell.xib */; };
+		C4E1E06C22C2339300357A28 /* ContactDetailsEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1E06B22C2339300357A28 /* ContactDetailsEditViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,11 @@
 		C480A79222BFA4AE00E575E2 /* ContactList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ContactList.json; sourceTree = "<group>"; };
 		C480A79422BFA51200E575E2 /* ContactListJsonParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListJsonParsingTest.swift; sourceTree = "<group>"; };
 		C480A79722BFA92000E575E2 /* AssignmentAsyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAsyncTest.swift; sourceTree = "<group>"; };
+		C4A4745722C125F400435C5F /* ContactDetailEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailEditViewController.swift; sourceTree = "<group>"; };
+		C4A4745922C12DBA00435C5F /* ContactDetailEditViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailEditViewController+DataSource.swift"; sourceTree = "<group>"; };
+		C4A4745B22C1306C00435C5F /* ContactEditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditTableViewCell.swift; sourceTree = "<group>"; };
+		C4A4745C22C1306C00435C5F /* ContactEditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactEditTableViewCell.xib; sourceTree = "<group>"; };
+		C4A4745F22C141FE00435C5F /* ContactDetailEditViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailEditViewController+TextField.swift"; sourceTree = "<group>"; };
 		C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewModel.swift; sourceTree = "<group>"; };
 		C4C4A4CD22BA123800303508 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C4A4D822BA123800303508 /* Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment.xcdatamodel; sourceTree = "<group>"; };
@@ -85,6 +98,9 @@
 		C4C4A51122BA132C00303508 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C4A51A22BA13B900303508 /* APIErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		C4C4A51C22BA13B900303508 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		C4E1E06122C1FED000357A28 /* IndexingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexingTableViewCell.swift; sourceTree = "<group>"; };
+		C4E1E06222C1FED000357A28 /* IndexingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexingTableViewCell.xib; sourceTree = "<group>"; };
+		C4E1E06B22C2339300357A28 /* ContactDetailsEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsEditViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +135,10 @@
 				C480A78022BDD37E00E575E2 /* ContactTableCell.xib */,
 				C480A78722BF38CE00E575E2 /* ContactDetailCell.swift */,
 				C480A78822BF38CE00E575E2 /* ContactDetailCell.xib */,
+				C4A4745B22C1306C00435C5F /* ContactEditTableViewCell.swift */,
+				C4A4745C22C1306C00435C5F /* ContactEditTableViewCell.xib */,
+				C4E1E06122C1FED000357A28 /* IndexingTableViewCell.swift */,
+				C4E1E06222C1FED000357A28 /* IndexingTableViewCell.xib */,
 			);
 			path = "Custom TableCell";
 			sourceTree = "<group>";
@@ -136,6 +156,7 @@
 			children = (
 				C4ADCBD222BCCF3B00CDEC94 /* AssignmentViewModel.swift */,
 				C480A78F22BF470400E575E2 /* ContactDetailsViewModel.swift */,
+				C4E1E06B22C2339300357A28 /* ContactDetailsEditViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -242,6 +263,9 @@
 				C480A77922BDCE6D00E575E2 /* ViewController+TableDataSource.swift */,
 				C480A78322BE3FAD00E575E2 /* ContactDetailViewController.swift */,
 				C480A78D22BF427000E575E2 /* ContactDetailViewController+TableDataSource.swift */,
+				C4A4745722C125F400435C5F /* ContactDetailEditViewController.swift */,
+				C4A4745922C12DBA00435C5F /* ContactDetailEditViewController+DataSource.swift */,
+				C4A4745F22C141FE00435C5F /* ContactDetailEditViewController+TextField.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -269,7 +293,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4C4A4F822BA123900303508 /* Build configuration list for PBXNativeTarget "Assignment" */;
 			buildPhases = (
-				C480A79922C06C1C00E575E2 /* ShellScript */,
 				C4C4A4C922BA123800303508 /* Sources */,
 				C4C4A4CA22BA123800303508 /* Frameworks */,
 				C4C4A4CB22BA123800303508 /* Resources */,
@@ -371,6 +394,8 @@
 				C480A78222BDD37E00E575E2 /* ContactTableCell.xib in Resources */,
 				C480A78A22BF38CE00E575E2 /* ContactDetailCell.xib in Resources */,
 				C4C4A51522BA132C00303508 /* LaunchScreen.storyboard in Resources */,
+				C4E1E06422C1FED000357A28 /* IndexingTableViewCell.xib in Resources */,
+				C4A4745E22C1306C00435C5F /* ContactEditTableViewCell.xib in Resources */,
 				C4C4A4DB22BA123900303508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,36 +417,20 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		C480A79922C06C1C00E575E2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C4C4A4C922BA123800303508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E1E06C22C2339300357A28 /* ContactDetailsEditViewModel.swift in Sources */,
+				C4A4746022C141FE00435C5F /* ContactDetailEditViewController+TextField.swift in Sources */,
 				C4C4A51722BA132C00303508 /* ViewController.swift in Sources */,
 				C480A78C22BF3D4900E575E2 /* Contactdetails.swift in Sources */,
 				C480A79022BF470400E575E2 /* ContactDetailsViewModel.swift in Sources */,
 				C4C4A51D22BA13B900303508 /* APIErrors.swift in Sources */,
 				C480A78622BE570600E575E2 /* UIView+gradient.swift in Sources */,
+				C4A4745A22C12DBA00435C5F /* ContactDetailEditViewController+DataSource.swift in Sources */,
+				C4A4745D22C1306C00435C5F /* ContactEditTableViewCell.swift in Sources */,
 				C4C4A51222BA132C00303508 /* String+URLRequest.swift in Sources */,
 				C480A78E22BF427000E575E2 /* ContactDetailViewController+TableDataSource.swift in Sources */,
 				C4C4A51F22BA13B900303508 /* Info.swift in Sources */,
@@ -431,9 +440,11 @@
 				C480A78922BF38CE00E575E2 /* ContactDetailCell.swift in Sources */,
 				C4ADCBD322BCCF3B00CDEC94 /* AssignmentViewModel.swift in Sources */,
 				C480A78422BE3FAD00E575E2 /* ContactDetailViewController.swift in Sources */,
+				C4A4745822C125F400435C5F /* ContactDetailEditViewController.swift in Sources */,
 				C4C4A51922BA132C00303508 /* AppDelegate.swift in Sources */,
 				C4C4A51422BA132C00303508 /* AsyncImageView.swift in Sources */,
 				C4C4A51822BA132C00303508 /* NetworkDataLoader.swift in Sources */,
+				C4E1E06322C1FED000357A28 /* IndexingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

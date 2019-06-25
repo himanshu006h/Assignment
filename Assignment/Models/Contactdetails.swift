@@ -31,6 +31,19 @@ struct Contactdetails: Decodable {
         case updated_at = "updated_at"
     }
     
+    // To make default model
+    init(id: Int = 1, first_Name: String, last_name: String, phone_number: String, email: String, profile_pic: String, favorite: Bool = false, created_at: String, updated_at: String) {
+        self.first_name = first_Name
+        self.last_name = last_name
+        self.phone_number = phone_number
+        self.email = email
+        self.id = id
+        self.profile_pic = profile_pic
+        self.favorite = favorite
+        self.created_at = created_at
+        self.updated_at = updated_at
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContactKey.self)
         id = try container.decodeIfPresent(Int.self, forKey: .id) ?? 0
