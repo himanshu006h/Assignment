@@ -35,7 +35,6 @@ extension ContactDetailEditViewController {
         let curFrame = (notification.userInfo![UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         let deltaY =  curFrame.height
         let screenSize = UIScreen.main.bounds
-
         
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: UIView.KeyframeAnimationOptions(rawValue: curve), animations: {
             //Hard code value will remove on logic

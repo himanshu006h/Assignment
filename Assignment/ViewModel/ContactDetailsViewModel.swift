@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol ContactDetailsProtocol {
+protocol ContactDetailsProtocol: class {
     func updateContactInformation(contactDetails: Any?, error: Error?)
 }
 
 struct ContactDetailsViewModel {
     //MARK:- Properties
     var conatactInfo : Contactdetails?
-    let conatctDelegate: ContactDetailsProtocol?
+   weak var conatctDelegate: ContactDetailsProtocol?
     
     func fetchContactDetails(urlString: String) {
         // Fetch data from the API

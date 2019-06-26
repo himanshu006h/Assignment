@@ -15,14 +15,14 @@ enum TextFieldValues: Int {
     case email = 3
 }
 
-protocol ContactDetailsEditProtocol {
+protocol ContactDetailsEditProtocol: class {
     func editedContactInformation(contactDetails: Any?, error: Error?)
 }
 
 struct ContactDetailsEditViewModel {
     //MARK:- Properties
     var conatactInfo : Contactdetails?
-    let editDelegate: ContactDetailsEditProtocol?
+    weak var editDelegate: ContactDetailsEditProtocol?
     let dateFormat = "yyyy-MM-ddTHH.mm.ss.SSSZ"
     let imageURl = "/images/missing.png"
     
